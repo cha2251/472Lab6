@@ -52,7 +52,7 @@ namespace quantum_lab {
         Message($"Encrypted: {encrypted}");
         Message($"Decrypted: {decrypted}");
 
-        if CountMismatchedNumbers(encrypted, decrypted) > 2 {
+        if CountMismatchedNumbers(toEncrypt, decrypted) > 2 {
             Message("VITM Detected!");
         }
 
@@ -65,7 +65,7 @@ namespace quantum_lab {
     }
 
     // ChatGPTd this bit. Pretty sure the gates are right?
-    operation PrepareQubitsHermione(qubits : Qubit[], biases: Bool[], bits: Bool[]) : Unit {
+    operation PrepareQubitsHermione(qubits : Qubit[], biases: Bool[], bits: Bool[]) : Unit is Adj{
         for i in 0..Length(qubits) - 1 {
             if biases[i]{
                 X(qubits[i]);
@@ -77,11 +77,10 @@ namespace quantum_lab {
     }
 
     operation MeasureQubits(qubits : Qubit[], biases : Bool[]): Bool[]{
-        for i in 0..Length(qubits) - 1 {
-            if biases[i]{
-                X(qubits[i]);
-            }
-        }
+        // X operations
+        ApplyPauliFromBitString(PauliX, true, biases, qubits);
+        // Z operations
+        ApplyPauliFromBitString(PauliZ, false, biases, qubits);
         return ResultArrayAsBoolArray(MultiM(qubits));
     }
 
