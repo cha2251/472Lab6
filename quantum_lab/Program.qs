@@ -30,12 +30,20 @@ namespace quantum_lab {
         let harryKey = GenerateSharedKey(biasesHermione, biasesHarry, bitsHarry);
 
         let mismatches = CountMismatchedBits(hermioneKey, harryKey);
-        if mismatches > 5 {
+        if mismatches > 2 {
             Message("Harry and Hermione are not compatible.");
         } else {
             Message("Harry and Hermione are compatible.");
         }
 
+        let toEncrypt = 472;
+        let encrypted = Xor(BoolArrayAsInt(hermioneKey), toEncrypt);
+        let decrypted = Xor(encrypted, BoolArrayAsInt(harryKey));
+        Message($"Message  : {toEncrypt}");
+        Message($"Encrypted: {encrypted}");
+        Message($"Decrypted: {decrypted}");
+
+        Message($"----------------DEBUG----------------");
         Message($"Hermione's biases: {biasesHermione}");
         Message($"Hermione's bits: {bitsHermione}");
         Message($"Harry's biases: {biasesHarry}");
