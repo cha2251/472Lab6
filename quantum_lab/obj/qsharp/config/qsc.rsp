@@ -1,10 +1,10 @@
 --proj
-    "C:\Users\Carter\Desktop\College\CSEC_472\Lab6\quantum_lab\quantum_lab"
+    "C:\Users\Carter\Desktop\College\CSEC_472\472Lab6\quantum_lab\quantum_lab"
 --build-exe
 --input
-    "C:\Users\Carter\Desktop\College\CSEC_472\Lab6\quantum_lab\Program.qs"
+    "C:\Users\Carter\Desktop\College\CSEC_472\472Lab6\quantum_lab\Program.qs"
 --output
-    "C:/Users/Carter/Desktop/College/CSEC_472/Lab6/quantum_lab/obj/qsharp/"
+    "C:/Users/Carter/Desktop/College/CSEC_472/472Lab6/quantum_lab/obj/qsharp/"
 --references
     "C:\Users\Carter\.nuget\packages\azure.core\1.25.0\lib\net5.0\Azure.Core.dll"
     "C:\Users\Carter\.nuget\packages\azure.identity\1.5.0\lib\netstandard2.0\Azure.Identity.dll"
@@ -42,7 +42,7 @@
     FullComputation
 --skip-monomorphization
 --package-load-fallback-folders
-    "C:/Users/Carter/Desktop/College/CSEC_472/Lab6/quantum_lab/bin/Debug/net6.0/"
+    "C:/Users/Carter/Desktop/College/CSEC_472/472Lab6/quantum_lab/bin/Debug/net6.0/"
 --assembly-properties
     DocsPackageId:quantum_lab
     ExecutionTarget:Any

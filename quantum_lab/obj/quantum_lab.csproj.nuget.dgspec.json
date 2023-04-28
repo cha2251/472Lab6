@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\quantum_lab.csproj": {}
+    "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\quantum_lab.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\quantum_lab.csproj": {
+    "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\quantum_lab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\quantum_lab.csproj",
+        "projectUniqueName": "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\quantum_lab.csproj",
         "projectName": "quantum_lab",
-        "projectPath": "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\quantum_lab.csproj",
+        "projectPath": "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\quantum_lab.csproj",
         "packagesPath": "C:\\Users\\Carter\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\obj\\",
+        "outputPath": "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carter\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -7461,11 +7461,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\quantum_lab.csproj",
+      "projectUniqueName": "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\quantum_lab.csproj",
       "projectName": "quantum_lab",
-      "projectPath": "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\quantum_lab.csproj",
+      "projectPath": "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\quantum_lab.csproj",
       "packagesPath": "C:\\Users\\Carter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\obj\\",
+      "outputPath": "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Carter\\AppData\\Roaming\\NuGet\\NuGet.Config"

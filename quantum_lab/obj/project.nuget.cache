@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "80iPvIp3mFhqgLBNfypN924YGDL7I/xrGBRGGMcQCkz08hZ3xOCXneePwG9RvcsZUFHF5/lskk+fNxaBwOSDAQ==",
+  "dgSpecHash": "jr6MuAJ8i47lbIqKqn8uosXTSvxDn7qbRmXTuJAU7SHJbMxm8i3aUktCkqWyJ5Jm96n6U73NnMG5Pt5I2/yGbg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Carter\\Desktop\\College\\CSEC_472\\Lab6\\quantum_lab\\quantum_lab.csproj",
+  "projectFilePath": "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\quantum_lab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carter\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Carter\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",
