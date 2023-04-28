@@ -16,12 +16,20 @@ using Microsoft.Quantum.Simulation.Core;
 
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"quantum_lab\",\"Name\":\"Main\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Core\",\"Name\":\"EntryPoint\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]},\"Argument\":{\"Item1\":{\"Case\":\"UnitValue\"},\"Item2\":[],\"Item3\":{\"Case\":\"UnitType\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":12},\"Item2\":{\"Line\":1,\"Column\":14}}]}},\"Offset\":{\"Item1\":14,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":15,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"quantum_lab\",\"Name\":\"Main\"},\"Attributes\":[],\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":15,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":15}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"quantum_lab\",\"Name\":\"RandomIntArray\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":43,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"count\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":32}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Int\"},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"quantum_lab\",\"Name\":\"RandomIntArray\"},\"Attributes\":[],\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":43,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"quantum_lab\",\"Name\":\"PrepareQubitsHermione\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":46,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qubits\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":39}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"biases\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":51},\"Item2\":{\"Line\":1,\"Column\":57}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"bits\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":67},\"Item2\":{\"Line\":1,\"Column\":71}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"quantum_lab\",\"Name\":\"PrepareQubitsHermione\"},\"Attributes\":[],\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":46,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"quantum_lab\",\"Name\":\"MeasureQubits\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":57,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qubits\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":25},\"Item2\":{\"Line\":1,\"Column\":31}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"biases\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":49}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"quantum_lab\",\"Name\":\"MeasureQubits\"},\"Attributes\":[],\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":57,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"quantum_lab\",\"Name\":\"RandomBoolArray\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":66,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"count\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":33}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Int\"},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"quantum_lab\",\"Name\":\"RandomBoolArray\"},\"Attributes\":[],\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":66,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"quantum_lab\",\"Name\":\"GenerateSharedKey\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":76,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"biasesHermione\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":29},\"Item2\":{\"Line\":1,\"Column\":43}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"biasesHarry\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":54},\"Item2\":{\"Line\":1,\"Column\":65}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"measuredBits\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":76},\"Item2\":{\"Line\":1,\"Column\":88}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"quantum_lab\",\"Name\":\"GenerateSharedKey\"},\"Attributes\":[],\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":76,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"quantum_lab\",\"Name\":\"CountMismatchedBits\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":86,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"hermioneKey\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":31},\"Item2\":{\"Line\":1,\"Column\":42}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"harryKey\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":53},\"Item2\":{\"Line\":1,\"Column\":61}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"quantum_lab\",\"Name\":\"CountMismatchedBits\"},\"Attributes\":[],\"SourceFile\":\"C:\\\\Users\\\\Carter\\\\Desktop\\\\College\\\\CSEC_472\\\\472Lab6\\\\quantum_lab\\\\Program.qs\",\"Position\":{\"Item1\":86,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
 #line hidden
 namespace quantum_lab
 {
-    [SourceLocation("C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs", OperationFunctor.Body, 16, 44)]
+    [SourceLocation("C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs", OperationFunctor.Body, 16, 47)]
     public partial class Main : Operation<QVoid, QVoid>, ICallable
     {
         public Main(IOperationFactory m) : base(m)
@@ -43,13 +51,37 @@ namespace quantum_lab
             set;
         }
 
-        protected ICallable<Int64, IQArray<Int64>> RandomIntArray__
+        protected ICallable<Int64, IQArray<Boolean>> RandomBoolArray__
         {
             get;
             set;
         }
 
         protected ICallable Length__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(IQArray<Qubit>,IQArray<Boolean>,IQArray<Boolean>), QVoid> PrepareQubitsHermione__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(IQArray<Qubit>,IQArray<Boolean>), IQArray<Boolean>> MeasureQubits__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(IQArray<Boolean>,IQArray<Boolean>,IQArray<Boolean>), IQArray<Boolean>> GenerateSharedKey__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(IQArray<Boolean>,IQArray<Boolean>), Int64> CountMismatchedBits__
         {
             get;
             set;
@@ -66,25 +98,49 @@ namespace quantum_lab
 #line hidden
             {
 #line 17 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-                var qs = Allocate__.Apply(16L);
+                var qubits = Allocate__.Apply(16L);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
 #line 19 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-                    var biasesHermione = (IQArray<Int64>)RandomIntArray__.Apply(qs.Length);
+                    var biasesHermione = (IQArray<Boolean>)RandomBoolArray__.Apply(qubits.Length);
 #line 20 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-                    var bitsHermione = (IQArray<Int64>)RandomIntArray__.Apply(qs.Length);
-#line 23 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-                    var biasesHarry = (IQArray<Int64>)RandomIntArray__.Apply(qs.Length);
+                    var bitsHermione = (IQArray<Boolean>)RandomBoolArray__.Apply(qubits.Length);
+#line 22 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    PrepareQubitsHermione__.Apply((qubits, biasesHermione, bitsHermione));
 #line 25 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-                    var bitsHarry = (IQArray<Int64>)RandomIntArray__.Apply(qs.Length);
-#line 27 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-                    Message__.Apply(String.Format("Hermione's biases: {0}", biasesHermione));
-#line 28 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-                    Message__.Apply(String.Format("Hermione's bits: {0}", bitsHermione));
+                    var biasesHarry = (IQArray<Boolean>)RandomBoolArray__.Apply(qubits.Length);
+#line 26 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    var bitsHarry = (IQArray<Boolean>)MeasureQubits__.Apply((qubits, biasesHarry));
 #line 29 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    var hermioneKey = (IQArray<Boolean>)GenerateSharedKey__.Apply((biasesHermione, biasesHarry, bitsHermione));
+#line 30 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    var harryKey = (IQArray<Boolean>)GenerateSharedKey__.Apply((biasesHermione, biasesHarry, bitsHarry));
+#line 32 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    var mismatches = CountMismatchedBits__.Apply((hermioneKey, harryKey));
+#line 33 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    if ((mismatches > 5L))
+                    {
+#line 34 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                        Message__.Apply("Harry and Hermione are not compatible.");
+                    }
+                    else
+                    {
+#line 36 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                        Message__.Apply("Harry and Hermione are compatible.");
+                    }
+
+#line 39 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    Message__.Apply(String.Format("Hermione's biases: {0}", biasesHermione));
+#line 40 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    Message__.Apply(String.Format("Hermione's bits: {0}", bitsHermione));
+#line 41 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
                     Message__.Apply(String.Format("Harry's biases: {0}", biasesHarry));
+#line 42 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    Message__.Apply(String.Format("Hermione's key: {0}", hermioneKey));
+#line 43 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    Message__.Apply(String.Format("Harry's key: {0}", harryKey));
                 }
 #line hidden
                 catch
@@ -98,7 +154,7 @@ namespace quantum_lab
                     if (__arg1__)
                     {
 #line hidden
-                        Release__.Apply(qs);
+                        Release__.Apply(qubits);
                     }
                 }
             }
@@ -112,8 +168,12 @@ namespace quantum_lab
         {
             this.Allocate__ = this.__Factory__.Get<Allocate>(typeof(global::Microsoft.Quantum.Intrinsic.Allocate));
             this.Release__ = this.__Factory__.Get<Release>(typeof(global::Microsoft.Quantum.Intrinsic.Release));
-            this.RandomIntArray__ = this.__Factory__.Get<ICallable<Int64, IQArray<Int64>>>(typeof(RandomIntArray));
+            this.RandomBoolArray__ = this.__Factory__.Get<ICallable<Int64, IQArray<Boolean>>>(typeof(RandomBoolArray));
             this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+            this.PrepareQubitsHermione__ = this.__Factory__.Get<ICallable<(IQArray<Qubit>,IQArray<Boolean>,IQArray<Boolean>), QVoid>>(typeof(PrepareQubitsHermione));
+            this.MeasureQubits__ = this.__Factory__.Get<ICallable<(IQArray<Qubit>,IQArray<Boolean>), IQArray<Boolean>>>(typeof(MeasureQubits));
+            this.GenerateSharedKey__ = this.__Factory__.Get<ICallable<(IQArray<Boolean>,IQArray<Boolean>,IQArray<Boolean>), IQArray<Boolean>>>(typeof(GenerateSharedKey));
+            this.CountMismatchedBits__ = this.__Factory__.Get<ICallable<(IQArray<Boolean>,IQArray<Boolean>), Int64>>(typeof(CountMismatchedBits));
             this.Message__ = this.__Factory__.Get<ICallable<String, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Message));
         }
 
@@ -125,42 +185,210 @@ namespace quantum_lab
         }
     }
 
-    [SourceLocation("C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs", OperationFunctor.Body, 44, -1)]
-    public partial class RandomIntArray : Operation<Int64, IQArray<Int64>>, ICallable
+    [SourceLocation("C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs", OperationFunctor.Body, 47, 58)]
+    public partial class PrepareQubitsHermione : Operation<(IQArray<Qubit>,IQArray<Boolean>,IQArray<Boolean>), QVoid>, ICallable
     {
-        public RandomIntArray(IOperationFactory m) : base(m)
+        public PrepareQubitsHermione(IOperationFactory m) : base(m)
         {
         }
 
-        String ICallable.Name => "RandomIntArray";
-        String ICallable.FullName => "quantum_lab.RandomIntArray";
+        public class In : QTuple<(IQArray<Qubit>,IQArray<Boolean>,IQArray<Boolean>)>, IApplyData
+        {
+            public In((IQArray<Qubit>,IQArray<Boolean>,IQArray<Boolean>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits
+            {
+                get
+                {
+                    return ((IApplyData)Data.Item1)?.Qubits;
+                }
+            }
+        }
+
+        String ICallable.Name => "PrepareQubitsHermione";
+        String ICallable.FullName => "quantum_lab.PrepareQubitsHermione";
+        protected ICallable Length__
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        public override Func<(IQArray<Qubit>,IQArray<Boolean>,IQArray<Boolean>), QVoid> __Body__ => (__in__) =>
+        {
+            var (qubits,biases,bits) = __in__;
+#line 48 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            foreach (var i in new QRange(0L, (qubits.Length - 1L)))
+#line hidden
+            {
+#line 49 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                if (biases[i])
+                {
+#line 50 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    Microsoft__Quantum__Intrinsic__X.Apply(qubits[i]);
+                }
+
+#line 52 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                if (bits[i])
+                {
+#line 53 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    Microsoft__Quantum__Intrinsic__H.Apply(qubits[i]);
+                }
+            }
+
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override void __Init__()
+        {
+            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+        }
+
+        public override IApplyData __DataIn__((IQArray<Qubit>,IQArray<Boolean>,IQArray<Boolean>) data) => new In(data);
+        public override IApplyData __DataOut__(QVoid data) => data;
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> qubits, IQArray<Boolean> biases, IQArray<Boolean> bits)
+        {
+            return __m__.Run<PrepareQubitsHermione, (IQArray<Qubit>,IQArray<Boolean>,IQArray<Boolean>), QVoid>((qubits, biases, bits));
+        }
+    }
+
+    [SourceLocation("C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs", OperationFunctor.Body, 58, 67)]
+    public partial class MeasureQubits : Operation<(IQArray<Qubit>,IQArray<Boolean>), IQArray<Boolean>>, ICallable
+    {
+        public MeasureQubits(IOperationFactory m) : base(m)
+        {
+        }
+
+        public class In : QTuple<(IQArray<Qubit>,IQArray<Boolean>)>, IApplyData
+        {
+            public In((IQArray<Qubit>,IQArray<Boolean>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits
+            {
+                get
+                {
+                    return ((IApplyData)Data.Item1)?.Qubits;
+                }
+            }
+        }
+
+        String ICallable.Name => "MeasureQubits";
+        String ICallable.FullName => "quantum_lab.MeasureQubits";
+        protected ICallable Length__
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Result>, IQArray<Boolean>> Microsoft__Quantum__Convert__ResultArrayAsBoolArray
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Qubit>, IQArray<Result>> Microsoft__Quantum__Measurement__MultiM
+        {
+            get;
+            set;
+        }
+
+        public override Func<(IQArray<Qubit>,IQArray<Boolean>), IQArray<Boolean>> __Body__ => (__in__) =>
+        {
+            var (qubits,biases) = __in__;
+#line 59 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            foreach (var i in new QRange(0L, (qubits.Length - 1L)))
+#line hidden
+            {
+#line 60 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                if (biases[i])
+                {
+#line 61 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    Microsoft__Quantum__Intrinsic__X.Apply(qubits[i]);
+                }
+            }
+
+#line 64 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            return Microsoft__Quantum__Convert__ResultArrayAsBoolArray.Apply(Microsoft__Quantum__Measurement__MultiM.Apply(qubits));
+        }
+
+        ;
+        public override void __Init__()
+        {
+            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Convert__ResultArrayAsBoolArray = this.__Factory__.Get<ICallable<IQArray<Result>, IQArray<Boolean>>>(typeof(global::Microsoft.Quantum.Convert.ResultArrayAsBoolArray));
+            this.Microsoft__Quantum__Measurement__MultiM = this.__Factory__.Get<ICallable<IQArray<Qubit>, IQArray<Result>>>(typeof(global::Microsoft.Quantum.Measurement.MultiM));
+        }
+
+        public override IApplyData __DataIn__((IQArray<Qubit>,IQArray<Boolean>) data) => new In(data);
+        public override IApplyData __DataOut__(IQArray<Boolean> data) => data;
+        public static System.Threading.Tasks.Task<IQArray<Boolean>> Run(IOperationFactory __m__, IQArray<Qubit> qubits, IQArray<Boolean> biases)
+        {
+            return __m__.Run<MeasureQubits, (IQArray<Qubit>,IQArray<Boolean>), IQArray<Boolean>>((qubits, biases));
+        }
+    }
+
+    [SourceLocation("C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs", OperationFunctor.Body, 67, 77)]
+    public partial class RandomBoolArray : Operation<Int64, IQArray<Boolean>>, ICallable
+    {
+        public RandomBoolArray(IOperationFactory m) : base(m)
+        {
+        }
+
+        String ICallable.Name => "RandomBoolArray";
+        String ICallable.FullName => "quantum_lab.RandomBoolArray";
         protected ICallable<Double, Boolean> Microsoft__Quantum__Random__DrawRandomBool
         {
             get;
             set;
         }
 
-        public override Func<Int64, IQArray<Int64>> __Body__ => (__in__) =>
+        public override Func<Int64, IQArray<Boolean>> __Body__ => (__in__) =>
         {
             var count = __in__;
-#line 45 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+#line 68 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
 #line hidden
-            var __arg1__ = 0L;
-#line 45 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-            var array = new QArray<Int64>(QArray.Filled(() => __arg1__, count));
-#line 46 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            var __arg1__ = false;
+#line 68 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            var array = new QArray<Boolean>(QArray.Filled(() => __arg1__, count));
+#line 69 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
             foreach (var i in new QRange(0L, (count - 1L)))
 #line hidden
             {
-#line 47 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+#line 70 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
                 if (Microsoft__Quantum__Random__DrawRandomBool.Apply(0.5D))
                 {
-#line 48 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
-                    array.Modify(i, 1L);
+#line 71 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    array.Modify(i, true);
                 }
             }
 
-#line 51 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+#line 74 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
             return array;
         }
 
@@ -171,10 +399,128 @@ namespace quantum_lab
         }
 
         public override IApplyData __DataIn__(Int64 data) => new QTuple<Int64>(data);
-        public override IApplyData __DataOut__(IQArray<Int64> data) => data;
-        public static System.Threading.Tasks.Task<IQArray<Int64>> Run(IOperationFactory __m__, Int64 count)
+        public override IApplyData __DataOut__(IQArray<Boolean> data) => data;
+        public static System.Threading.Tasks.Task<IQArray<Boolean>> Run(IOperationFactory __m__, Int64 count)
         {
-            return __m__.Run<RandomIntArray, Int64, IQArray<Int64>>(count);
+            return __m__.Run<RandomBoolArray, Int64, IQArray<Boolean>>(count);
+        }
+    }
+
+    [SourceLocation("C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs", OperationFunctor.Body, 77, 87)]
+    public partial class GenerateSharedKey : Operation<(IQArray<Boolean>,IQArray<Boolean>,IQArray<Boolean>), IQArray<Boolean>>, ICallable
+    {
+        public GenerateSharedKey(IOperationFactory m) : base(m)
+        {
+        }
+
+        public class In : QTuple<(IQArray<Boolean>,IQArray<Boolean>,IQArray<Boolean>)>, IApplyData
+        {
+            public In((IQArray<Boolean>,IQArray<Boolean>,IQArray<Boolean>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
+        }
+
+        String ICallable.Name => "GenerateSharedKey";
+        String ICallable.FullName => "quantum_lab.GenerateSharedKey";
+        protected ICallable Length__
+        {
+            get;
+            set;
+        }
+
+        public override Func<(IQArray<Boolean>,IQArray<Boolean>,IQArray<Boolean>), IQArray<Boolean>> __Body__ => (__in__) =>
+        {
+            var (biasesHermione,biasesHarry,measuredBits) = __in__;
+#line 78 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            var sharedKey = new QArray<Boolean>();
+#line 79 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            foreach (var i in new QRange(0L, (biasesHermione.Length - 1L)))
+#line hidden
+            {
+#line 80 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                if ((biasesHermione[i] == biasesHarry[i]))
+                {
+#line 81 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    sharedKey = QArray<Boolean>.Add(sharedKey, new QArray<Boolean>(measuredBits[i]));
+                }
+            }
+
+#line 84 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            return sharedKey;
+        }
+
+        ;
+        public override void __Init__()
+        {
+            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+        }
+
+        public override IApplyData __DataIn__((IQArray<Boolean>,IQArray<Boolean>,IQArray<Boolean>) data) => new In(data);
+        public override IApplyData __DataOut__(IQArray<Boolean> data) => data;
+        public static System.Threading.Tasks.Task<IQArray<Boolean>> Run(IOperationFactory __m__, IQArray<Boolean> biasesHermione, IQArray<Boolean> biasesHarry, IQArray<Boolean> measuredBits)
+        {
+            return __m__.Run<GenerateSharedKey, (IQArray<Boolean>,IQArray<Boolean>,IQArray<Boolean>), IQArray<Boolean>>((biasesHermione, biasesHarry, measuredBits));
+        }
+    }
+
+    [SourceLocation("C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs", OperationFunctor.Body, 87, -1)]
+    public partial class CountMismatchedBits : Operation<(IQArray<Boolean>,IQArray<Boolean>), Int64>, ICallable
+    {
+        public CountMismatchedBits(IOperationFactory m) : base(m)
+        {
+        }
+
+        public class In : QTuple<(IQArray<Boolean>,IQArray<Boolean>)>, IApplyData
+        {
+            public In((IQArray<Boolean>,IQArray<Boolean>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
+        }
+
+        String ICallable.Name => "CountMismatchedBits";
+        String ICallable.FullName => "quantum_lab.CountMismatchedBits";
+        protected ICallable Length__
+        {
+            get;
+            set;
+        }
+
+        public override Func<(IQArray<Boolean>,IQArray<Boolean>), Int64> __Body__ => (__in__) =>
+        {
+            var (hermioneKey,harryKey) = __in__;
+#line 88 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            var mismatches = 0L;
+#line 89 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            foreach (var i in new QRange(0L, (hermioneKey.Length - 1L)))
+#line hidden
+            {
+#line 90 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                if ((hermioneKey[i] != harryKey[i]))
+                {
+#line 91 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+                    mismatches = (mismatches + 1L);
+                }
+            }
+
+#line 94 "C:\\Users\\Carter\\Desktop\\College\\CSEC_472\\472Lab6\\quantum_lab\\Program.qs"
+            return mismatches;
+        }
+
+        ;
+        public override void __Init__()
+        {
+            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+        }
+
+        public override IApplyData __DataIn__((IQArray<Boolean>,IQArray<Boolean>) data) => new In(data);
+        public override IApplyData __DataOut__(Int64 data) => new QTuple<Int64>(data);
+        public static System.Threading.Tasks.Task<Int64> Run(IOperationFactory __m__, IQArray<Boolean> hermioneKey, IQArray<Boolean> harryKey)
+        {
+            return __m__.Run<CountMismatchedBits, (IQArray<Boolean>,IQArray<Boolean>), Int64>((hermioneKey, harryKey));
         }
     }
 }

@@ -16,48 +16,81 @@ namespace quantum_lab {
     operation Main() : Unit {
         use qubits = Qubit[16];
 
-        let biasesHermione = RandomIntArray(Length(qubits));
-        let bitsHermione = RandomIntArray(Length(qubits));
+        let biasesHermione = RandomBoolArray(Length(qubits));
+        let bitsHermione = RandomBoolArray(Length(qubits));
 
         PrepareQubitsHermione(qubits, biasesHermione, bitsHermione);
 
         //Harry guesses at the biases
-        let biasesHarry = RandomIntArray(Length(qubits));
+        let biasesHarry = RandomBoolArray(Length(qubits));
         let bitsHarry = MeasureQubits(qubits, biasesHarry);
+
+        //Gen keys
+        let hermioneKey = GenerateSharedKey(biasesHermione, biasesHarry, bitsHermione);
+        let harryKey = GenerateSharedKey(biasesHermione, biasesHarry, bitsHarry);
+
+        let mismatches = CountMismatchedBits(hermioneKey, harryKey);
+        if mismatches > 5 {
+            Message("Harry and Hermione are not compatible.");
+        } else {
+            Message("Harry and Hermione are compatible.");
+        }
 
         Message($"Hermione's biases: {biasesHermione}");
         Message($"Hermione's bits: {bitsHermione}");
         Message($"Harry's biases: {biasesHarry}");
+        Message($"Hermione's key: {hermioneKey}");
+        Message($"Harry's key: {harryKey}");
     }
 
     // ChatGPTd this bit. Pretty sure the gates are right?
-    operation PrepareQubitsHermione(qubits : Qubit[], biases: Int[], bits: Int[]) : Unit {
+    operation PrepareQubitsHermione(qubits : Qubit[], biases: Bool[], bits: Bool[]) : Unit {
         for i in 0..Length(qubits) - 1 {
-            if biases[i] == 1{
+            if biases[i]{
                 X(qubits[i]);
             }
-            if bits[i] == 1{
+            if bits[i]{
                 H(qubits[i]);
             }
         }
     }
 
-    operation MeasureQubits(qubits : Qubit[], biases : Int[]): Bool[]{
+    operation MeasureQubits(qubits : Qubit[], biases : Bool[]): Bool[]{
         for i in 0..Length(qubits) - 1 {
-            if biases[i] == 1{
+            if biases[i]{
                 X(qubits[i]);
             }
         }
         return ResultArrayAsBoolArray(MultiM(qubits));
     }
 
-    operation RandomIntArray (count : Int) : Int[] {
-        mutable array = [0, size=count];
+    operation RandomBoolArray (count : Int) : Bool[] {
+        mutable array = [false, size=count];
         for i in 0 .. count - 1 {
             if DrawRandomBool(0.5) {
-                set array w/= i <- 1;
+                set array w/= i <- true;
             }
         }
         return array;
+    }
+
+    operation GenerateSharedKey(biasesHermione : Bool[], biasesHarry : Bool[], measuredBits : Bool[]) : Bool[] {
+        mutable sharedKey = [];
+        for i in 0..Length(biasesHermione) - 1 {
+            if biasesHermione[i] == biasesHarry[i] {
+                set sharedKey += [measuredBits[i]];
+            }
+        }
+        return sharedKey;
+    }
+
+    operation CountMismatchedBits(hermioneKey : Bool[], harryKey : Bool[]) : Int {
+        mutable mismatches = 0;
+        for i in 0..Length(hermioneKey) - 1 {
+            if hermioneKey[i] != harryKey[i] {
+                set mismatches += 1;
+            }
+        }
+        return mismatches;
     }
 }
