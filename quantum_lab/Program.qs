@@ -14,15 +14,16 @@ namespace quantum_lab {
     
     @EntryPoint()
     operation Main() : Unit {
-        use qs = Qubit[16];
+        use qubits = Qubit[16];
 
-        let biasesHermione = RandomIntArray(Length(qs));
-        let bitsHermione = RandomIntArray(Length(qs));
+        let biasesHermione = RandomIntArray(Length(qubits));
+        let bitsHermione = RandomIntArray(Length(qubits));
+
+        PrepareQubitsHermione(qubits, biasesHermione, bitsHermione);
 
         //Harry guesses at the biases
-        let biasesHarry = RandomIntArray(Length(qs));
-        //Send bits to harry
-        let bitsHarry = RandomIntArray(Length(qs));
+        let biasesHarry = RandomIntArray(Length(qubits));
+        let bitsHarry = MeasureQubits(qubits, biasesHarry);
 
         Message($"Hermione's biases: {biasesHermione}");
         Message($"Hermione's bits: {bitsHermione}");
@@ -30,15 +31,24 @@ namespace quantum_lab {
     }
 
     // ChatGPTd this bit. Pretty sure the gates are right?
-    operation PrepareQubitsHermione(qubits : Qubit[], biases: Bool[], bits: Bool[]) : Unit {
+    operation PrepareQubitsHermione(qubits : Qubit[], biases: Int[], bits: Int[]) : Unit {
         for i in 0..Length(qubits) - 1 {
-            if biases[i] {
+            if biases[i] == 1{
                 X(qubits[i]);
             }
-            if bits[i] {
+            if bits[i] == 1{
                 H(qubits[i]);
             }
         }
+    }
+
+    operation MeasureQubits(qubits : Qubit[], biases : Int[]): Bool[]{
+        for i in 0..Length(qubits) - 1 {
+            if biases[i] == 1{
+                X(qubits[i]);
+            }
+        }
+        return ResultArrayAsBoolArray(MultiM(qubits));
     }
 
     operation RandomIntArray (count : Int) : Int[] {
