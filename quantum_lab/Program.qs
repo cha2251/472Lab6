@@ -14,12 +14,21 @@ namespace quantum_lab {
     
     @EntryPoint()
     operation Main() : Unit {
+        let evesdrop = false;
         use qubits = Qubit[16];
 
         let biasesHermione = RandomBoolArray(Length(qubits));
         let bitsHermione = RandomBoolArray(Length(qubits));
 
         PrepareQubitsHermione(qubits, biasesHermione, bitsHermione);
+
+        if evesdrop {
+            // He Who Shall Not Be Named guesses at qubits and passes them along
+            let biasesVoldy = RandomBoolArray(Length(qubits));
+            let bitsVoldy = MeasureQubits(qubits, biasesVoldy);
+            Message($"Voldy's biases: {biasesVoldy}");
+            Message($"Voldy's measuerments: {bitsVoldy}");
+        }
 
         //Harry guesses at the biases
         let biasesHarry = RandomBoolArray(Length(qubits));
@@ -42,6 +51,10 @@ namespace quantum_lab {
         Message($"Message  : {toEncrypt}");
         Message($"Encrypted: {encrypted}");
         Message($"Decrypted: {decrypted}");
+
+        if CountMismatchedNumbers(encrypted, decrypted) > 2 {
+            Message("VITM Detected!");
+        }
 
         Message($"----------------DEBUG----------------");
         Message($"Hermione's biases: {biasesHermione}");
@@ -96,6 +109,18 @@ namespace quantum_lab {
         mutable mismatches = 0;
         for i in 0..Length(hermioneKey) - 1 {
             if hermioneKey[i] != harryKey[i] {
+                set mismatches += 1;
+            }
+        }
+        return mismatches;
+    }
+
+    operation CountMismatchedNumbers(encrypted : Int, decrypted : Int) : Int {
+        mutable mismatches = 0;
+        let encyrptBits = IntAsBoolArray(encrypted,16);
+        let decyrptBits = IntAsBoolArray(decrypted,16);
+        for i in 0..Length(encyrptBits) - 1 {
+            if encyrptBits[i] != decyrptBits[i] {
                 set mismatches += 1;
             }
         }
